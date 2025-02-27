@@ -30,7 +30,7 @@ def holt_winters_forecast(df, periods=12):
     return fit, forecast
 
 def main():
-    file_path = "dati_complessivi_1M.xlsx"  # Sostituisci con il percorso corretto
+    file_path = "dati_complessivi_1M.xlsx"
     df = load_data(file_path)
     fit, forecast = holt_winters_forecast(df, 12)
     
